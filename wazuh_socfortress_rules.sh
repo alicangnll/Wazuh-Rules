@@ -152,7 +152,7 @@ cloneRules() {
         mkdir wazuh_rules_backup
         logger -e "Backing up current rules into /tmp/wazuh_rules_backup/"
         \cp -r /var/ossec/etc/rules/* /tmp/wazuh_rules_backup/
-        git clone https://github.com/socfortress/Wazuh-Rules.git
+        git clone https://github.com/alicangnll/Wazuh-Rules.git
         cd /tmp/Wazuh-Rules
         find . -name '*xml' -exec mv {} /var/ossec/etc/rules/ \;
         find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
@@ -177,7 +177,7 @@ cloneRules() {
         mkdir wazuh_rules_backup
         logger -e "Backing up current rules into /tmp/wazuh_rules_backup/"
         \cp -r /var/ossec/etc/rules/* /tmp/wazuh_rules_backup/
-        git clone https://github.com/socfortress/Wazuh-Rules.git
+        git clone https://github.com/alicangnll/Wazuh-Rules.git
         cd /tmp/Wazuh-Rules
         find . -name '*xml' -exec mv {} /var/ossec/etc/rules/ \;
         find /var/ossec/etc/rules/ -name 'decoder-linux-sysmon.xml' -exec mv {} /var/ossec/etc/decoders/ \;
