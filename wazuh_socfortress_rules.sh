@@ -144,7 +144,6 @@ healthCheck() {
 ## Install the required packages for the installation
 cloneRules() {
     logger "Beginning the Install"
-
     if [ ${sys_type} == "yum" ]; then
         logger -e "Veryfing that Wazuh-Manager software is installed....continued"
         if [ -n "$(rpm -qa | grep wazuh-manager) 2> /dev/null" ]; then
